@@ -1,5 +1,3 @@
-// UC5 - Display Hello using Enhanced For Loop
-
 public class helloworld {
 
     public static void main(String[] args) {
