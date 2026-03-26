@@ -1,25 +1,19 @@
-// UC5 - Display Hello using Enhanced For Loop
-
-public class helloworld {
+public class HelloApp {
 
     public static void main(String[] args) {
 
         if (args.length > 0) {
 
-            System.out.print("Hello ");
-
-            int count = 0;
+            String names = "";
 
             for (String name : args) {
-                System.out.print(name);
-
-                count++;
-                if (count < args.length) {
-                    System.out.print(", ");
-                }
+                names = names + name + ", ";
             }
 
-            System.out.println();
+            // Remove last ", "
+            names = names.substring(0, names.length() - 2);
+
+            System.out.println("Hello " + names);
 
         } else {
             System.out.println("Hello World");
